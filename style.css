@@ -44,27 +44,26 @@ table {
 
 /* My styling begins here */
 form {
-	margin: 0 auto;
-	width: 550px;
-	height: 250px;
-	padding: 1px;
+	margin: 50px auto 0;
+	width: 560px;
+	height: 300px;
+	padding: 20px;
 	border: 1px solid #CCC;
 	border-radius: 1em;
 }
 
-section {
+fieldset {
 	display: flex;
-	/* border: 1px solid black; */
+	flex-wrap: wrap;
 }
 
-fieldset:last-child {
-	margin-left: 50px;
+div:nth-child(2n) {
+	margin-left: 60px;
 }
 
 div {
 	margin: 15px 0;
 	width: 250px;
-	/* border: 1px solid black; */
 }
 
 label, input {
@@ -72,7 +71,6 @@ label, input {
 	flex-direction: column;
 	align-items: flex-start;
 	text-align: left;
-	/* margin-left: 5px; */
 	box-sizing: border-box;
 }
 
@@ -84,7 +82,6 @@ label {
 
 input {
 	border: 2px solid grey;
-	margin-bottom: 15px;
 	padding: 5px;
 	border-radius: 5px;
 	width: 100%;
@@ -93,10 +90,6 @@ input {
 input:invalid {
 	border-color: red;
 }
-
-/* input:invalid:required {
-	background-image: linear-gradient(to right, pink, lightgreen);
-} */
   
 input:valid {
 	border-color: green;
@@ -111,17 +104,12 @@ input + span {
 }
 
 input:required + span::after {
-	font-size: 0.85rem;
+	font-size: 0.90rem;
 	position: absolute;
 	content: "required";
 	color: white;
 	background-color: black;
 	padding: 2px 5px;
-	top: -65px;
-	left: 195px;
-}
-
-form > section {
-	margin: 0px;
-	/* border: 1px solid black; */
+	top: -50px;
+	left: 185px;
 }
