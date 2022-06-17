@@ -41,3 +41,32 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* My styling begins here */
+form {
+	margin: 0 auto;
+	width: 400px;
+	height: 200px;
+	padding: 1px;
+	border: 1px solid #CCC;
+	border-radius: 1em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div {
+	margin: 1px 0px;
+}
+
+label, input {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	margin-left: 5px;
+}
+
+label {
+	display: inline-block;
+	font-size: 0.85rem;
+}
