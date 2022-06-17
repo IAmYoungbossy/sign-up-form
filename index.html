@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Sign-Up Form</h1>
-</body>
+
+    <form action="get" method="get" accept-charset="utf-8">
+      <div class="input">
+        <label for="fname">First Name</label>
+        <input id="fname" name="fname" type="text" placeholder="Bob" />
+      </div>
+
+      <div class="input">
+        <label for="lname">Surname Name</label>
+        <input id="lname" name="lname" type="text" placeholder="John" />
+      </div>
+
+      <div class="input">
+        <label for="phone">Phone Number</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          placeholder="+2347012345677"
+        />
+      </div>
+
+      <div class="input">
+        <label for="email">Email Adress</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="joe@example.com"
+        />
+      </div>
+
+      <div class="input">
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Password"
+        />
+      </div>
+
+      <div class="input">
+        <label for="comfirm-password">Confirm Password</label>
+        <input
+          id="comfirm-password"
+          name="comfirm-password"
+          type="password"
+          placeholder="Confirm Password"
+        />
+      </div>
+
+      <div>
+          <button>Submit</button>
+      </div>
+    </form>
+  </body>
 </html>
