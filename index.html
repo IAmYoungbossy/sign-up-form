@@ -14,12 +14,12 @@
     <form action="get" method="get" accept-charset="utf-8">
       <div class="input">
             <label for="fname">First Name</label>
-            <input id="fname" name="fname" type="text" placeholder="Bob" />
+            <input id="fname" name="fname" type="text" placeholder="Bob" minlength="2" required/>
       </div>
 
       <div class="input">
             <label for="lname">Surname Name</label>
-            <input id="lname" name="lname" type="text" placeholder="John" />
+            <input id="lname" name="lname" type="text" placeholder="John" minlength="2" required/>
       </div>
 
       <div class="input">
@@ -29,17 +29,17 @@
 
       <div class="input">
             <label for="email">Email Adress</label>
-            <input id="email" name="email" type="email" placeholder="joe@example.com"/>
+            <input id="email" name="email" type="email" placeholder="joe@example.com" minlength="6" required/>
       </div>
 
       <div class="input">
             <label for="password">Password</label>
-            <input id="password" name="password" type="password" placeholder="Password"/>
+            <input id="password" name="password" type="password" placeholder="Password" minlength="6" required/>
       </div>
 
       <div class="input">
             <label for="comfirm-password">Confirm Password</label>
-            <input id="comfirm-password" name="comfirm-password" type="password" placeholder="Confirm Password"/>
+            <input id="comfirm-password" name="comfirm-password" type="password" placeholder="Confirm Password" required/>
       </div>
 
       <div>
