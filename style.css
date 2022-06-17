@@ -64,9 +64,29 @@ label, input {
 	align-items: flex-start;
 	text-align: left;
 	margin-left: 5px;
+	box-sizing: border-box;
 }
 
 label {
 	display: inline-block;
 	font-size: 0.85rem;
+}
+
+input {
+	border: 2px solid grey;
+	margin-bottom: 15px;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+input:invalid {
+	border-color: red;
+}
+
+input:invalid:required {
+	background-image: linear-gradient(to right, pink, lightgreen);
+}
+  
+input:valid {
+	border-color: green;
 }
