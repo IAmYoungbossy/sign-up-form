@@ -49,6 +49,7 @@
             type="email"
             placeholder="joe@example.com"
             minlength="6"
+            pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
             required
           />
           <span></span>
@@ -60,6 +61,7 @@
             id="phone"
             name="phone"
             type="tel"
+            pattern="[\+]\d{3}\d{3}\d{7}|0\d{10}"
             placeholder="+2347012345677"
           />
           <span></span>
@@ -73,6 +75,7 @@
             type="password"
             placeholder="Password"
             minlength="6"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,32}$"
             required
           />
           <span></span>
@@ -85,6 +88,7 @@
             name="comfirm-password"
             type="password"
             placeholder="Confirm Password"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,32}$"
             required
           />
           <span></span>
