@@ -87,12 +87,27 @@ input {
 	width: 100%;
 }
 
-input:invalid {
+input + span {
+	position: relative;
+}
+  
+input + span::before {
+	position: absolute;
+	right: -270px;
+	top: -22px;
+}
+
+input:invalid + span::before {
+	content: '✖';
+	color: red;
 	border-color: red;
 }
   
-input:valid {
+input:valid + span::before {
+	content: '✓';
+	color: green;
 	border-color: green;
+	
 }
 
 input:hover, input:focus {
