@@ -102,26 +102,44 @@ input + span::before {
 	top: -22px;
 }
 
-input:invalid + span::before {
-	content: '✖';
-	color: red;
-	border-color: red;
+input:not(:placeholder-shown):not(:focus):invalid + span::before {
+	content: '❌';
+}
+
+input:not(:placeholder-shown):invalid {
+	border: 2px solid red;
 }
   
-input:valid + span::before {
-	content: '✓';
+input:not(:placeholder-shown):valid + span::before {
+	content: '✔️';
 	color: green;
-	border-color: green;
-	
+}
+
+input:not(:placeholder-shown):valid {
+	border: 2px solid green;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid purple;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+input:invalid:focus:not(:placeholder-shown){
+	border: 2px solid red;
+	padding: 5px;
+	border-radius: 5px;
+	width: 100%;
 }
 
 input:hover, input:focus {
 	background-color: #eee;
 }
 
-input + span {
+/* input + span {
 	position: relative;
-}
+} */
 
 input:required + span::after {
 	font-size: 0.90rem;
