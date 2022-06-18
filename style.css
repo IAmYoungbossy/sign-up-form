@@ -104,6 +104,7 @@ input + span::before {
 
 input:not(:placeholder-shown):not(:focus):invalid + span::before {
 	content: '❌';
+	color: red;
 }
 
 input:not(:placeholder-shown):invalid {
