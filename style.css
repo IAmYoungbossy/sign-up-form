@@ -52,6 +52,11 @@ form {
 	border-radius: 1em;
 }
 
+h2 {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
 fieldset {
 	display: flex;
 	flex-wrap: wrap;
@@ -126,5 +131,5 @@ input:required + span::after {
 	background-color: black;
 	padding: 2px 5px;
 	top: -50px;
-	left: 185px;
+	left: 175px;
 }
