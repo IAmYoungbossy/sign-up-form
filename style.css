@@ -102,21 +102,21 @@ input + span::before {
 	top: -22px;
 }
 
-input:not(:placeholder-shown):not(:focus):invalid + span::before {
+input[pattern]:not(:placeholder-shown):not(:focus):invalid + span::before {
 	content: '❌';
 	color: red;
 }
 
-input:not(:placeholder-shown):invalid {
+input[pattern]:not(:placeholder-shown):invalid {
 	border: 2px solid red;
 }
   
-input:not(:placeholder-shown):valid + span::before {
+input[pattern]:not(:placeholder-shown):valid + span::before {
 	content: '✔️';
 	color: green;
 }
 
-input:not(:placeholder-shown):valid {
+input[pattern]:not(:placeholder-shown):valid {
 	border: 2px solid green;
 }
 
@@ -127,20 +127,16 @@ input:focus {
 	border-radius: 5px;
 }
 
-input:invalid:focus:not(:placeholder-shown){
+input[pattern]:invalid:focus:not(:placeholder-shown){
 	border: 2px solid red;
 	padding: 5px;
 	border-radius: 5px;
 	width: 100%;
 }
 
-input:hover, input:focus {
+input[pattern]:hover, input:focus {
 	background-color: #eee;
 }
-
-/* input + span {
-	position: relative;
-} */
 
 input:required + span::after {
 	font-size: 0.90rem;
