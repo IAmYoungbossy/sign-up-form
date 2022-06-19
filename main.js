@@ -4,7 +4,7 @@ const signUpButton = document.querySelector("button");
 
 confirmPassword.addEventListener("keyup", () => {
   if (confirmPassword.value === password.value && password.value !== "") {
-    confirmPassword.classList.remove("cpwdi");
+    confirmPassword.classList.remove("cpwdrb");
     confirmPassword.classList.remove("cpwdx");
     confirmPassword.classList.remove("cpwdfi");
     confirmPassword.classList.add("cpwdc");
@@ -14,7 +14,7 @@ confirmPassword.addEventListener("keyup", () => {
     confirmPassword.classList.remove("cpwdc");
     confirmPassword.classList.remove("cpwdgb");
     confirmPassword.classList.remove("cpwdv");
-    confirmPassword.classList.add("cpwdi");
+    confirmPassword.classList.add("cpwdrb");
     confirmPassword.classList.add("cpwdx");
     confirmPassword.classList.add("cpwdfi");
   }

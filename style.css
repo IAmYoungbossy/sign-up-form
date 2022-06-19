@@ -150,7 +150,7 @@ input:required + span::after {
 .cpwdx:not(:placeholder-shown):not(:focus) + span::before {
   content: "❌";
 }
-.cpwdi:not(:placeholder-shown) {
+.cpwdrb:not(:placeholder-shown) {
   border: 2px solid red;
 }
 .cpwdc:not(:placeholder-shown) + span::before {
@@ -178,3 +178,7 @@ input:required + span::after {
   border-radius: 5px;
   width: 100%;
 }
+
+/* cpwd = confirm password, rb = red border for invalid input, v = valid state,
+gb = green border for valid input, fi = focus at invaliid state,
+x = the invalid state icon ❌ when not focused, c = ✔️ for correct input */
