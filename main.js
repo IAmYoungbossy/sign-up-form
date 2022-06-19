@@ -20,11 +20,13 @@ confirmPassword.addEventListener("keyup", () => {
   }
 });
 
-signUpButton.addEventListener("mousedown", () => {
-  if (confirmPassword.value !== password.value) {
-    signUpButton.disabled = true;
-    setTimeout(function () {
-      signUpButton.disabled = false;
-    }, 1);
-  }
-});
+function checkForPasswordMatch(){
+    if (confirmPassword.value !== password.value) {
+        signUpButton.disabled = true;
+        setTimeout(function () {
+          signUpButton.disabled = false;
+        }, 1);
+    }
+}
+signUpButton.addEventListener("click", checkForPasswordMatch);
+signUpButton.addEventListener("keydown", checkForPasswordMatch);
