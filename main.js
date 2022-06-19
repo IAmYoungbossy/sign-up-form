@@ -28,5 +28,5 @@ function checkForInvalidMatch(){
         }, 1);
     }
 }
-signUpButton.addEventListener("click", checkForPasswordMatch);
-signUpButton.addEventListener("keydown", checkForPasswordMatch);
+signUpButton.addEventListener("click", checkForInvalidMatch);
+signUpButton.addEventListener("keydown", checkForInvalidMatch);
