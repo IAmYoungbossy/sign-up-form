@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="main.js" defer></script>
   </head>
-
   <body>
 
     <form action="get" method="get" accept-charset="utf-8">
       <h2>Required fields are labelled with "required".</h2>
 
       <fieldset>
-        <div class="input">
+        <div>
           <label for="fname">First Name</label>
           <input
             id="fname"
@@ -28,7 +27,7 @@
           <span></span>
         </div>
 
-        <div class="input">
+        <div>
           <label for="lname">Surname Name</label>
           <input
             id="lname"
@@ -41,8 +40,8 @@
           <span></span>
         </div>
 
-        <div class="input">
-          <label for="email">Email Adress</label>
+        <div>
+          <label for="email">Email Address</label>
           <input
             id="email"
             name="email"
@@ -55,7 +54,7 @@
           <span></span>
         </div>
 
-        <div class="input">
+        <div>
           <label for="phone">Phone Number (Optional)</label>
           <input
             id="phone"
@@ -67,7 +66,7 @@
           <span></span>
         </div>
 
-        <div class="input">
+        <div>
           <label for="password">Password</label>
           <input
             id="password"
@@ -81,14 +80,13 @@
           <span></span>
         </div>
 
-        <div class="input">
+        <div>
           <label for="comfirm-password">Confirm Password</label>
           <input
-            id="comfirm-password"
-            name="comfirm-password"
+            id="confirm-password"
+            name="confirm-password"
             type="password"
             placeholder="Confirm Password"
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,32}$"
             required
           />
           <span></span>
