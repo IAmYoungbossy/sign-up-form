@@ -1,10 +1,30 @@
-let password = document.querySelector('#password');
-let comfirmPassword = document.querySelector('#comfirm-password');
-const signUpButton = document.querySelector('button');
+let password = document.querySelector("#password");
+let confirmPassword = document.querySelector("#confirm-password");
+const signUpButton = document.querySelector("button");
 
-comfirmPassword.addEventListener('keyup', () => {
-    let comfirmPwdArray = [];
-    comfirmPwdArray.push(comfirmPassword.value);
-    console.log(comfirmPwdArray);
-    if (password.value === comfirmPassword.value)console.log('It works: ${password.value}');
+confirmPassword.addEventListener("keyup", () => {
+  if (confirmPassword.value === password.value && password.value !== "") {
+    confirmPassword.classList.remove("cpwdi");
+    confirmPassword.classList.remove("cpwdx");
+    confirmPassword.classList.remove("cpwdfi");
+    confirmPassword.classList.add("cpwdc");
+    confirmPassword.classList.add("cpwdgb");
+    confirmPassword.classList.add("cpwdv");
+  } else if (confirmPassword.value !== password.value && password.value !== "") {
+    confirmPassword.classList.remove("cpwdc");
+    confirmPassword.classList.remove("cpwdgb");
+    confirmPassword.classList.remove("cpwdv");
+    confirmPassword.classList.add("cpwdi");
+    confirmPassword.classList.add("cpwdx");
+    confirmPassword.classList.add("cpwdfi");
+  }
+});
+
+signUpButton.addEventListener("mousedown", () => {
+  if (confirmPassword.value !== password.value) {
+    signUpButton.disabled = true;
+    setTimeout(function () {
+      signUpButton.disabled = false;
+    }, 1);
+  }
 });
