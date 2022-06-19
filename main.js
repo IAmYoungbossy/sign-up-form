@@ -20,7 +20,7 @@ confirmPassword.addEventListener("keyup", () => {
   }
 });
 
-function checkForPasswordMatch(){
+function checkForInvalidMatch(){
     if (confirmPassword.value !== password.value) {
         signUpButton.disabled = true;
         setTimeout(function () {
