@@ -40,21 +40,57 @@ table {
 /* My styling begins here */
 form {
   margin: 50px auto 0;
-  width: 560px;
-  height: 300px;
-  padding: 20px;
-  border: 1px solid #ccc;
+  width: 610px;
+  height: 500px;
+  /* border: 1px solid #ccc; */
   border-radius: 1em;
+  position: relative;
+}
+
+section:first-child {
+	width: 610px;
+	border: 1px solid #ccc;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 1em;  
+}
+
+p{
+	font-size: 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+p:nth-child(2){
+	margin-top: 20px;
+}
+
+em{
+	font-style: italic;
 }
 
 h2 {
-  margin-bottom: 20px;
-  font-weight: bold;
+  margin-bottom: 0px;
+  /* font-weight: bold; */
+  box-sizing: border-box;
+  position: absolute;
+  top: 142px;
+  left: 20px;
+  background-color: white;
+  padding: 5px;
 }
 
 fieldset {
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid grey;
+  margin: 30px auto 0;
+  width: 610px;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 1em; 
+  box-sizing: border-box;
 }
 
 div:nth-child(2n) {
@@ -144,6 +180,11 @@ input:required + span::after {
   padding: 2px 5px;
   top: -50px;
   left: 175px;
+}
+
+button {
+	margin: -25px;
+	box-sizing: border-box;
 }
 
 /*JavaScript password confirmation classes*/
