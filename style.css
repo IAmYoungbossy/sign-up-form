@@ -55,8 +55,8 @@ body {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 140px;
-  font-size: 5rem;
+  height: min(140px, 11.2vw, 22vh);
+  font-size: min(7rem,8vw, 16vh);
   font-family: nose-bold;
   color: white;
   position: absolute;
@@ -64,8 +64,8 @@ body {
 }
 
 [src="/image/odin-lined.png"]{
-  width: 100px;
-  height: 120px;
+  width: min(100px, 8vw, 16vh);
+  height: min(120px, 9.6vw, 19.4vh);
 }
 
 [id = bg-image] {
@@ -78,7 +78,7 @@ body {
   width: 50vw;
   margin: 0;
   background-image: url(./image/jonny-auh.jpg);
-  background-size: cover;
+  background-size: 100% 100vh;
 }
 
 form {
@@ -97,7 +97,7 @@ section:first-child {
 	border-radius: 1em;  
   margin-top: 15vh;
   position: relative;
-  box-shadow: 0px 3px 3px green;
+  box-shadow: 0px 2px 1px green;
 }
 
 p{
@@ -124,7 +124,7 @@ section:last-of-type {
   border: 1px solid #ccc;
   border-radius: 1em; 
   box-sizing: border-box;
-  box-shadow: 0px 3px 3px green;
+  box-shadow: 0px 2px 1px green;
 }
 
 div:nth-of-type(2n) {
@@ -132,7 +132,7 @@ div:nth-of-type(2n) {
 }
 
 div {
-  margin: 15px 0;
+  margin: min(15px, 2.5vh) 0;
   width: 45%;
   box-sizing: border-box;
 }
