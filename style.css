@@ -51,13 +51,13 @@ body {
   border: 1px solid black;
   margin: 0;
   margin-right: 5vh;
+  background-image: url(/image/jonny-auh.jpg);
+  background-size: cover;
 }
 
 form {
-  /* margin: 50px auto 0; */
   width: 510px;
   height: 100vh;
-  /* border: 1px solid #ccc; */
   border-radius: 1em;
   position: relative;
 }
@@ -87,7 +87,6 @@ em{
 
 h2 {
   margin-bottom: 0px;
-  /* font-weight: bold; */
   box-sizing: border-box;
   position: absolute;
   top: 32.5vh;
