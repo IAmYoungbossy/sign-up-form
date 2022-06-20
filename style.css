@@ -42,28 +42,30 @@ body {
   display: flex;
   margin: auto;
   padding: 0;
+  box-sizing: border-box;
 }
 
 [id = bg-image] {
   box-sizing: border-box;
   height: 100vh;
-  width: calc(85vw - 510px);
+  /* width: calc(85vw - 510px); */
+  width: 50vw;
   border: 1px solid black;
   margin: 0;
-  margin-right: 5vh;
   background-image: url(/image/jonny-auh.jpg);
   background-size: cover;
 }
 
 form {
-  width: 510px;
+  width: 50vw;
   height: 100vh;
-  border-radius: 1em;
   position: relative;
+  padding-left: min(2rem, 1%);
+  box-sizing: border-box;
 }
 
 section:first-child {
-	width: 510px;
+	width: 76.5%;
 	border: 1px solid #ccc;
 	padding: 10px;
 	box-sizing: border-box;
@@ -90,7 +92,6 @@ h2 {
   box-sizing: border-box;
   position: absolute;
   top: 32.5vh;
-  left: 5px;
   background-color: white;
   padding: 5px;
 }
@@ -99,9 +100,10 @@ section:last-of-type {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid grey;
-  margin: 30px auto 0;
-  width: 510px;
-  height: 300px;
+  margin: 30px 0 0;
+  /* width: min(510px, 100%); */
+  width: 76.5%;
+  /* height: 300px; */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 1em; 
@@ -109,12 +111,18 @@ section:last-of-type {
 }
 
 div:nth-of-type(2n) {
-  margin-left: 85px;
+  /* margin-left: (6.2vw, 20%); */
+  /* margin-left: 6.3vw; */
+  margin-left: 10%;
+  /* box-sizing: border-box; */
 }
 
 div {
   margin: 15px 0;
-  width: 200px;
+  /* width: 200px; */
+  width: 45%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
 label,
@@ -193,8 +201,8 @@ input:required + span::after {
   color: white;
   background-color: black;
   padding: 2px 5px;
-  top: -50px;
-  left: 130px;
+  top: -7.5vh;
+  left: 11vw;
 }
 
 button {
