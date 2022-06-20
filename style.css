@@ -38,15 +38,25 @@ table {
 }
 
 /* My styling begins here */
-/* body{
-  background-image: url(/image/jacob-grishey-j8iPllhcWWg-unsplash.jpg);
-  background-size: min(100vh, 100%);
-} */
+body {
+  display: flex;
+  margin: auto;
+  padding: 0;
+}
+
+[id = bg-image] {
+  box-sizing: border-box;
+  height: 100vh;
+  width: calc(85vw - 510px);
+  border: 1px solid black;
+  margin: 0;
+  margin-right: 5vh;
+}
 
 form {
-  margin: 50px auto 0;
+  /* margin: 50px auto 0; */
   width: 510px;
-  height: 500px;
+  height: 100vh;
   /* border: 1px solid #ccc; */
   border-radius: 1em;
   position: relative;
@@ -58,6 +68,7 @@ section:first-child {
 	padding: 10px;
 	box-sizing: border-box;
 	border-radius: 1em;  
+  margin-top: 100px;
 }
 
 p{
