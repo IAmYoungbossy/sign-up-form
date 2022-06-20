@@ -76,7 +76,6 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 50vw;
-  border: 1px solid black;
   margin: 0;
   background-image: url(/image/jonny-auh.jpg);
   background-size: cover;
@@ -208,6 +207,10 @@ input:focus {
 button {
 	margin: 1.2vw;
 	box-sizing: border-box;
+  padding: 5px 20px;
+  background-color: #596D48;
+  color: white;
+  border-radius: 5px;
 }
 
 /*JavaScript password confirmation classes*/
