@@ -206,6 +206,10 @@ input:focus {
   background-color: #eee;
 }
 
+form>p:last-of-type {
+  margin: 1.2vw;
+}
+
 button {
 	margin: 1.2vw;
 	box-sizing: border-box;
