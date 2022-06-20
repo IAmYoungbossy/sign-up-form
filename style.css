@@ -1,3 +1,7 @@
+@font-face {
+  font-family: nose-bold;
+  src: url(/font/Norse-Bold.otf);
+}
 /* Mayer's Reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,
 blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,
@@ -45,10 +49,29 @@ body {
   box-sizing: border-box;
 }
 
+[class = odin-logo] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 140px;
+  font-size: 5rem;
+  font-family: nose-bold;
+  color: white;
+}
+
+[src="/image/odin-lined.png"]{
+  width: 100px;
+  height: 120px;
+}
+
 [id = bg-image] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   height: 100vh;
-  /* width: calc(85vw - 510px); */
   width: 50vw;
   border: 1px solid black;
   margin: 0;
@@ -92,8 +115,9 @@ h2 {
   box-sizing: border-box;
   position: absolute;
   top: 32.5vh;
+  left: 1.7vw;
   background-color: white;
-  padding: 5px;
+  padding: 0.2rem;
 }
 
 section:last-of-type {
@@ -101,27 +125,20 @@ section:last-of-type {
   flex-wrap: wrap;
   border: 1px solid grey;
   margin: 30px 0 0;
-  /* width: min(510px, 100%); */
   width: 76.5%;
-  /* height: 300px; */
-  padding: 10px;
+  padding: 2%;
   border: 1px solid #ccc;
   border-radius: 1em; 
   box-sizing: border-box;
 }
 
 div:nth-of-type(2n) {
-  /* margin-left: (6.2vw, 20%); */
-  /* margin-left: 6.3vw; */
   margin-left: 10%;
-  /* box-sizing: border-box; */
 }
 
 div {
   margin: 15px 0;
-  /* width: 200px; */
   width: 45%;
-  border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
@@ -153,8 +170,8 @@ input + span {
 
 input + span::before {
   position: absolute;
-  right: -195px;
-  top: -22px;
+  right: -15.5vw;
+  top: -3.2vh;
 }
 
 input[pattern]:not(:placeholder-shown):not(:focus):invalid + span::before {
@@ -206,13 +223,14 @@ input:required + span::after {
 }
 
 button {
-	margin: 10px;
+	margin: 1.2vw;
 	box-sizing: border-box;
 }
 
 /*JavaScript password confirmation classes*/
 .cpwdx:not(:placeholder-shown):not(:focus) + span::before {
   content: "❌";
+  color: red;
 }
 .cpwdrb:not(:placeholder-shown) {
   border: 2px solid red;
