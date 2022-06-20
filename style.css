@@ -97,6 +97,7 @@ section:first-child {
 	border-radius: 1em;  
   margin-top: 15vh;
   position: relative;
+  box-shadow: 0px 3px 3px green;
 }
 
 p{
@@ -123,6 +124,7 @@ section:last-of-type {
   border: 1px solid #ccc;
   border-radius: 1em; 
   box-sizing: border-box;
+  box-shadow: 0px 3px 3px green;
 }
 
 div:nth-of-type(2n) {
