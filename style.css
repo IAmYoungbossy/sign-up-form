@@ -153,7 +153,7 @@ label {
 }
 
 input {
-  border: 2px solid grey;
+  border: 2px solid #E5E7EB;
   padding: 5px;
   border-radius: 5px;
   width: 100%;
