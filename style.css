@@ -176,6 +176,7 @@ input[pattern]:not(:placeholder-shown):not(:focus):invalid + span::before {
 
 input[pattern]:not(:placeholder-shown):invalid {
   border: 1px solid red;
+  box-shadow: 1px 2px 2px rgb(238, 174, 174);
 }
 
 input[pattern]:not(:placeholder-shown):valid + span::before {
@@ -227,6 +228,7 @@ button {
 }
 .cpwdrb:not(:placeholder-shown) {
   border: 1px solid red;
+  box-shadow: 1px 2px 2px rgb(238, 174, 174);
 }
 .cpwdc:not(:placeholder-shown) + span::before {
   content: "✔️";
