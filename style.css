@@ -153,7 +153,7 @@ label {
 }
 
 input {
-  border: 2px solid #E5E7EB;
+  border: 1px solid #E5E7EB;
   padding: 5px;
   border-radius: 5px;
   width: 100%;
@@ -175,7 +175,7 @@ input[pattern]:not(:placeholder-shown):not(:focus):invalid + span::before {
 }
 
 input[pattern]:not(:placeholder-shown):invalid {
-  border: 2px solid red;
+  border: 1px solid red;
 }
 
 input[pattern]:not(:placeholder-shown):valid + span::before {
@@ -184,19 +184,19 @@ input[pattern]:not(:placeholder-shown):valid + span::before {
 }
 
 input[pattern]:not(:placeholder-shown):valid {
-  border: 2px solid green;
+  border: 1px solid green;
 }
 
 input:focus {
   outline: none;
-  border: 2px solid blue;
+  border: 1px solid blue;
   padding: 5px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgb(188, 188, 223);
 }
 
 input[pattern]:invalid:focus:not(:placeholder-shown) {
-  border: 2px solid red;
+  border: 1px solid red;
   padding: 5px;
   border-radius: 5px;
   width: 100%;
@@ -226,29 +226,29 @@ button {
   color: red;
 }
 .cpwdrb:not(:placeholder-shown) {
-  border: 2px solid red;
+  border: 1px solid red;
 }
 .cpwdc:not(:placeholder-shown) + span::before {
   content: "✔️";
   color: green;
 }
 .cpwdgb:not(:placeholder-shown) {
-  border: 2px solid green;
+  border: 1px solid green;
 }
 .cpwdf:focus {
   outline: none;
-  border: 2px solid purple;
+  border: 1px solid purple;
   padding: 5px;
   border-radius: 5px;
 }
 .cpwdfi:focus:not(:placeholder-shown) {
-  border: 2px solid red;
+  border: 1px solid red;
   padding: 5px;
   border-radius: 5px;
   width: 100%;
 }
 .cpwdv:focus:not(:placeholder-shown) {
-  border: 2px solid green;
+  border: 1px solid green;
   padding: 5px;
   border-radius: 5px;
   width: 100%;
