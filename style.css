@@ -192,6 +192,7 @@ input:focus {
   border: 2px solid blue;
   padding: 5px;
   border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(188, 188, 223);
 }
 
 input[pattern]:invalid:focus:not(:placeholder-shown) {
