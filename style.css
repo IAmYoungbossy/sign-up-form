@@ -189,7 +189,7 @@ input[pattern]:not(:placeholder-shown):valid {
 
 input:focus {
   outline: none;
-  border: 2px solid purple;
+  border: 2px solid blue;
   padding: 5px;
   border-radius: 5px;
 }
