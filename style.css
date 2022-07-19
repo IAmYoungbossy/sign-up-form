@@ -211,6 +211,10 @@ input:focus {
 form>p:last-of-type {
   margin: 1.2vw;
 }
+form>p:last-of-type>span {
+  color: green;
+  cursor: pointer;
+}
 
 button {
 	margin: 1.2vw;
