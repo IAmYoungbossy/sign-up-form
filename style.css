@@ -219,6 +219,7 @@ button {
   background-color: #596D48;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 /*JavaScript password confirmation classes*/
